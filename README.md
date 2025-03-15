@@ -1,11 +1,30 @@
-# Intro to Marine Data Science
+function_name <- function(inputs){
+  output_value <- do_something(inputs)
+  return(output_value)
+}
 
-## PROG102: Functions
 
-### Before class
+square <- function(x){
+  result<- x^2
+  return(result)
+}
+square(3)
+y <- 4 
+square(y)
+square(y + 1)
 
-See [details about this module](https://marinecs-100b.github.io/tracks/prog/prog102.html) on the course website. Guided notes are in 'PROG102 Guided Notes.pdf'. Take notes directly on the guided notes, either by annotating the PDF or printing them out.
+nth_power<- function(x, n){
+result <- x^n
+return(result)
+}
 
-### In class
+nth_power(3, 2)
+nth_power(3, 4)
 
-Edit 'prog102.R' with your answers. [Submission instructions](https://marinecs-100b.github.io/module-submission.html) are on the course website.
+gt_threshold <- function(x, threshold){
+is_gt <- x > threshold
+result <- sum(is_gt)
+return(result)
+}
+gt_threshold(c(1, 2, 4), 3)
+
